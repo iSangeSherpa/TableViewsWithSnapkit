@@ -63,15 +63,31 @@
 		507768B72A0D44F8007CA72C /* TableViews */ = {
 			isa = PBXGroup;
 			children = (
-				507768B82A0D44F8007CA72C /* AppDelegate.swift */,
-				507768BA2A0D44F8007CA72C /* SceneDelegate.swift */,
-				507768BC2A0D44F8007CA72C /* ViewController.swift */,
-				507768BE2A0D44F8007CA72C /* Main.storyboard */,
-				507768C12A0D44FA007CA72C /* Assets.xcassets */,
-				507768C32A0D44FA007CA72C /* LaunchScreen.storyboard */,
+				507768CD2A0D4945007CA72C /* Controllers */,
+				507768CC2A0D45CD007CA72C /* Supporting Files */,
 				507768C62A0D44FA007CA72C /* Info.plist */,
 			);
 			path = TableViews;
+			sourceTree = "<group>";
+		};
+		507768CC2A0D45CD007CA72C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				507768BE2A0D44F8007CA72C /* Main.storyboard */,
+				507768C12A0D44FA007CA72C /* Assets.xcassets */,
+				507768B82A0D44F8007CA72C /* AppDelegate.swift */,
+				507768BA2A0D44F8007CA72C /* SceneDelegate.swift */,
+				507768C32A0D44FA007CA72C /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		507768CD2A0D4945007CA72C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				507768BC2A0D44F8007CA72C /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		B9E2AF9DC9223636AF3EF1BD /* Pods */ = {
@@ -80,7 +96,6 @@
 				1DE34562578B58CC450A9156 /* Pods-TableViews.debug.xcconfig */,
 				3A36ECD62B3441D61F2F2C46 /* Pods-TableViews.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
