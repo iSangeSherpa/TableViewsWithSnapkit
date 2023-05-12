@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		507768B92A0D44F8007CA72C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507768B82A0D44F8007CA72C /* AppDelegate.swift */; };
 		507768BB2A0D44F8007CA72C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507768BA2A0D44F8007CA72C /* SceneDelegate.swift */; };
-		507768BD2A0D44F8007CA72C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507768BC2A0D44F8007CA72C /* ViewController.swift */; };
+		507768BD2A0D44F8007CA72C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507768BC2A0D44F8007CA72C /* TableViewController.swift */; };
 		507768C02A0D44F8007CA72C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507768BE2A0D44F8007CA72C /* Main.storyboard */; };
 		507768C22A0D44FA007CA72C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507768C12A0D44FA007CA72C /* Assets.xcassets */; };
 		507768C52A0D44FA007CA72C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507768C32A0D44FA007CA72C /* LaunchScreen.storyboard */; };
+		507B6A2F2A0DF75E009C571B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507B6A2E2A0DF75E009C571B /* CustomTableViewCell.swift */; };
+		507B6A312A0DF796009C571B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507B6A302A0DF796009C571B /* Product.swift */; };
+		507B6A332A0DFE3B009C571B /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507B6A322A0DFE3B009C571B /* DescriptionViewController.swift */; };
 		6F2F39A3D762E01C8ECFD3A1 /* Pods_TableViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79527C768ECF2B7C83F103A /* Pods_TableViews.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,11 +25,14 @@
 		507768B52A0D44F8007CA72C /* TableViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		507768B82A0D44F8007CA72C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		507768BA2A0D44F8007CA72C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		507768BC2A0D44F8007CA72C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		507768BC2A0D44F8007CA72C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		507768BF2A0D44F8007CA72C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		507768C12A0D44FA007CA72C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		507768C42A0D44FA007CA72C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		507768C62A0D44FA007CA72C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		507B6A2E2A0DF75E009C571B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		507B6A302A0DF796009C571B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		507B6A322A0DFE3B009C571B /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		A79527C768ECF2B7C83F103A /* Pods_TableViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,9 +69,12 @@
 		507768B72A0D44F8007CA72C /* TableViews */ = {
 			isa = PBXGroup;
 			children = (
+				507B6A2D2A0DF410009C571B /* Models */,
+				507B6A2C2A0DF409009C571B /* Views */,
 				507768CD2A0D4945007CA72C /* Controllers */,
 				507768CC2A0D45CD007CA72C /* Supporting Files */,
 				507768C62A0D44FA007CA72C /* Info.plist */,
+				507768C12A0D44FA007CA72C /* Assets.xcassets */,
 			);
 			path = TableViews;
 			sourceTree = "<group>";
@@ -74,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				507768BE2A0D44F8007CA72C /* Main.storyboard */,
-				507768C12A0D44FA007CA72C /* Assets.xcassets */,
 				507768B82A0D44F8007CA72C /* AppDelegate.swift */,
 				507768BA2A0D44F8007CA72C /* SceneDelegate.swift */,
 				507768C32A0D44FA007CA72C /* LaunchScreen.storyboard */,
@@ -85,9 +93,26 @@
 		507768CD2A0D4945007CA72C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				507768BC2A0D44F8007CA72C /* ViewController.swift */,
+				507768BC2A0D44F8007CA72C /* TableViewController.swift */,
+				507B6A322A0DFE3B009C571B /* DescriptionViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		507B6A2C2A0DF409009C571B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				507B6A2E2A0DF75E009C571B /* CustomTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		507B6A2D2A0DF410009C571B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				507B6A302A0DF796009C571B /* Product.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B9E2AF9DC9223636AF3EF1BD /* Pods */ = {
@@ -222,8 +247,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				507768BD2A0D44F8007CA72C /* ViewController.swift in Sources */,
+				507768BD2A0D44F8007CA72C /* TableViewController.swift in Sources */,
 				507768B92A0D44F8007CA72C /* AppDelegate.swift in Sources */,
+				507B6A312A0DF796009C571B /* Product.swift in Sources */,
+				507B6A332A0DFE3B009C571B /* DescriptionViewController.swift in Sources */,
+				507B6A2F2A0DF75E009C571B /* CustomTableViewCell.swift in Sources */,
 				507768BB2A0D44F8007CA72C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
